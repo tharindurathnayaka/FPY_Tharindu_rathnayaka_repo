@@ -15,6 +15,10 @@ module ex_forward_unit (
     input [4:0] ADDR1, ADDR2, ADDR3, MEM_ADDR, WB_ADDR;
     output reg [1:0] OP1_FWD_SEL, OP2_FWD_SEL, OP3_FWD_SEL;
 
+
+    reg [5:0]testfwd;
+    initial testfwd=5'd0;
+
     /* If the preceding instruction writes to the int reg file, compare address only if address in EX is int as well.
        If it writes to the float reg file, compare only if address in EX is float as well. */
     always @ (*)
@@ -29,8 +33,9 @@ module ex_forward_unit (
 
 
         // Forwarding for OP2
-        if (((MEM_WRITE_EN && EX_REG_TYPE == 2'b00) || (MEM_F_WRITE_EN && EX_REG_TYPE != 2'b00)) && MEM_ADDR === ADDR2)
+        if (((MEM_WRITE_EN && (EX_REG_TYPE == 2'b00)) || (MEM_F_WRITE_EN && EX_REG_TYPE != 2'b00)) && MEM_ADDR === ADDR2) begin
             OP2_FWD_SEL = 2'b01;    // Activate forwarding from MEM stage
+        end
         else if (((WB_WRITE_EN && EX_REG_TYPE == 2'b00) || (WB_F_WRITE_EN && EX_REG_TYPE != 2'b00)) && WB_ADDR === ADDR2)
             OP2_FWD_SEL = 2'b10;    // Activate forwarding from WB stage
         else
@@ -38,11 +43,11 @@ module ex_forward_unit (
 
         // Forwarding for OP3
         if ((MEM_F_WRITE_EN && EX_REG_TYPE == 2'b11) && MEM_ADDR === ADDR3)
-            OP2_FWD_SEL = 2'b01;    // Activate forwarding from MEM stage
+            OP3_FWD_SEL = 2'b01;    // Activate forwarding from MEM stage
         else if ((WB_F_WRITE_EN && EX_REG_TYPE == 2'b11) && WB_ADDR === ADDR3)
-            OP2_FWD_SEL = 2'b10;    // Activate forwarding from WB stage
+            OP3_FWD_SEL = 2'b10;    // Activate forwarding from WB stage
         else
-            OP2_FWD_SEL = 2'b00;    // No forwarding
+            OP3_FWD_SEL = 2'b00;    // No forwarding
 
     end
     

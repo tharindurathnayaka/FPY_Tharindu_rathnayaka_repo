@@ -5,7 +5,7 @@
 `include "../instruction_memory/instruction_memory.v"
 
 
-`timescale 1ns/100ps
+    `timescale 1ns/100ps
 
 module cpu_tb;
     parameter CLOCK_PERIOD = 10;
@@ -78,6 +78,20 @@ module cpu_tb;
 
         
         #1000
+/*
+        $display("Register 1 ",dut.ID_REG_FILE.REGISTERS[1]);
+        $display("Register 2 ",dut.ID_REG_FILE.REGISTERS[2]);
+        $display("Register 3 ",dut.ID_REG_FILE.REGISTERS[3]);
+        $display("Register 4 ",dut.ID_REG_FILE.REGISTERS[4]);
+        $display("Register 5 ",dut.ID_REG_FILE.REGISTERS[5]);
+        $display("Register 6 ",dut.ID_REG_FILE.REGISTERS[6]);
+        $display("Register 7 ",dut.ID_REG_FILE.REGISTERS[7]);
+        $display("Register 8 ",dut.ID_REG_FILE.REGISTERS[8]);
+        $display("Register 9 ",dut.ID_REG_FILE.REGISTERS[9]);
+       /$display("Register 10 ",dut.ID_REG_FILE.REGISTERS[10]);
+*/
+ 
+
 
         $display("Register 1 ",dut.ID_REG_FILE.REGISTERS[1]);
         $display("Register 2 ",dut.ID_REG_FILE.REGISTERS[2]);
@@ -89,6 +103,7 @@ module cpu_tb;
         $display("Register 8 ",dut.ID_REG_FILE.REGISTERS[8]);
         $display("Register 9 ",dut.ID_REG_FILE.REGISTERS[9]);
         $display("Register 10 ",dut.ID_REG_FILE.REGISTERS[10]);
+
 
         
 
