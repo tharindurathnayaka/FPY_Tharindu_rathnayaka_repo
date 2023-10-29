@@ -1,3 +1,5 @@
+// cpu tb
+
 `include "cpu.v"
 `include "../Data_memory/data_memory.v"
 `include "../instruction_memory/instruction_memory.v"
@@ -9,7 +11,7 @@ module cpu_tb;
     parameter CLOCK_PERIOD = 10;
     integer  k;
 
-
+    
     reg CLK,RESET ,CLK_INC,CLK_50;
 
     reg[4:0]INC;
