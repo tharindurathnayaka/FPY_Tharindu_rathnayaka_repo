@@ -1,21 +1,21 @@
 [*]
 [*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
-[*] Thu Oct 26 08:04:19 2023
+[*] Mon Oct 30 15:57:22 2023
 [*]
-[dumpfile] "E:\FY_Reserch\RV32IMF_LR\cpu\cpu_tb.vcd"
-[dumpfile_mtime] "Thu Oct 26 07:58:53 2023"
-[dumpfile_size] 61340
-[savefile] "E:\FY_Reserch\RV32IMF_LR\cpu\cpu.gtkw"
-[timestart] 34160
+[dumpfile] "E:\FY_Reserch\FPY_Tharindu_rathnayaka_repo\RV32IMF_LR\cpu\cpu_tb.vcd"
+[dumpfile_mtime] "Mon Oct 30 14:08:15 2023"
+[dumpfile_size] 130402
+[savefile] "E:\FY_Reserch\FPY_Tharindu_rathnayaka_repo\RV32IMF_LR\cpu\cpu.gtkw"
+[timestart] 112370
 [size] 1366 715
 [pos] -1 -1
-*-13.000000 51440 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+*-13.000000 120190 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] cpu_tb.
 [treeopen] cpu_tb.dut.
 [sst_width] 197
-[signals_width] 287
+[signals_width] 182
 [sst_expanded] 1
-[sst_vpaned_height] 193
+[sst_vpaned_height] 209
 @200
 -
 -CPU
@@ -36,10 +36,32 @@ cpu_tb.dut.ID_REG_FILE.WRITE_EN
 cpu_tb.dut.ID_REG_FILE.IN_ADDRESS[4:0]
 @24
 cpu_tb.dut.ID_REG_FILE.DATA_IN[31:0]
-@23
-cpu_tb.dut.ID_REG_FILE.\REGISTERS[1][31:0]
 @22
+cpu_tb.dut.ID_REG_FILE.\REGISTERS[1][31:0]
 cpu_tb.dut.ID_REG_FILE.\REGISTERS[2][31:0]
 cpu_tb.dut.ID_REG_FILE.\REGISTERS[3][31:0]
+@200
+-
+-F_REG FILE 
+@28
+cpu_tb.dut.ID_FREG_FILE.WRITE_EN
+@22
+cpu_tb.dut.ID_FREG_FILE.IN_ADDRESS[4:0]
+@24
+cpu_tb.dut.ID_FREG_FILE.DATA_IN[31:0]
+@200
+-
+-MEM
+@24
+cpu_tb.data_memory1.readdata[31:0]
+cpu_tb.data_memory1.address[31:0]
+@200
+-
+-ALU
+-
+@22
+cpu_tb.dut.EX_ALU.RESULT[31:0]
+@23
+cpu_tb.dut.EX_ALU.SELECT[5:0]
 [pattern_trace] 1
 [pattern_trace] 0

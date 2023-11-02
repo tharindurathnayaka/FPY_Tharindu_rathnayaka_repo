@@ -78,20 +78,6 @@ module cpu_tb;
 
         
         #1000
-/*
-        $display("Register 1 ",dut.ID_REG_FILE.REGISTERS[1]);
-        $display("Register 2 ",dut.ID_REG_FILE.REGISTERS[2]);
-        $display("Register 3 ",dut.ID_REG_FILE.REGISTERS[3]);
-        $display("Register 4 ",dut.ID_REG_FILE.REGISTERS[4]);
-        $display("Register 5 ",dut.ID_REG_FILE.REGISTERS[5]);
-        $display("Register 6 ",dut.ID_REG_FILE.REGISTERS[6]);
-        $display("Register 7 ",dut.ID_REG_FILE.REGISTERS[7]);
-        $display("Register 8 ",dut.ID_REG_FILE.REGISTERS[8]);
-        $display("Register 9 ",dut.ID_REG_FILE.REGISTERS[9]);
-       /$display("Register 10 ",dut.ID_REG_FILE.REGISTERS[10]);
-*/
- 
-
 
         $display("Register 1 ",dut.ID_REG_FILE.REGISTERS[1]);
         $display("Register 2 ",dut.ID_REG_FILE.REGISTERS[2]);
@@ -103,6 +89,20 @@ module cpu_tb;
         $display("Register 8 ",dut.ID_REG_FILE.REGISTERS[8]);
         $display("Register 9 ",dut.ID_REG_FILE.REGISTERS[9]);
         $display("Register 10 ",dut.ID_REG_FILE.REGISTERS[10]);
+
+        $display("    ");
+
+
+        $display("F_Register 1 ",dut.ID_FREG_FILE.REGISTERS[1]);
+        $display("F_Register 2 ",dut.ID_FREG_FILE.REGISTERS[2]);
+        $display("F_Register 3 ",dut.ID_FREG_FILE.REGISTERS[3]);
+        $display("F_Register 4 ",dut.ID_FREG_FILE.REGISTERS[4]);
+        $display("F_Register 5 ",dut.ID_FREG_FILE.REGISTERS[5]);
+        $display("F_Register 6 ",dut.ID_FREG_FILE.REGISTERS[6]);
+        $display("F_Register 7 ",dut.ID_FREG_FILE.REGISTERS[7]);
+        $display("F_Register 8 ",dut.ID_FREG_FILE.REGISTERS[8]);
+        $display("F_Register 9 ",dut.ID_FREG_FILE.REGISTERS[9]);
+        $display("F_Register 10 ",dut.ID_FREG_FILE.REGISTERS[10]);
 
 
         
