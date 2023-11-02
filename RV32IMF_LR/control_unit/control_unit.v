@@ -191,9 +191,11 @@ module control_unit (
     (opcode == 7'b0000011) ? 3'b010 :   // LB, LH, LW, LBU, LHU 
     (opcode == 7'b1100011) ? 3'b011 :   // BEQ, BNE, BLT, BGE, BLTU, BGEU
     (opcode == 7'b0100011) ? 3'b100 :   // SB, SH, SW 
+    (opcode == 7'b0100011) ? 3'b010 :   // FLW 
+    (opcode == 7'b0100011) ? 3'b100 :   // FSW
 
-    (opcode == 7'b0111111) ? 3'b010 :   // I AM CONFUSION: WHAT ARE YOU????
-    (opcode == 7'b0101111) ? 3'b100 :   // I AM CONFUSION: WHO ARE YOU???
+    (opcode == 7'b0000111) ? 3'b010 :   // I AM CONFUSION: WHAT ARE YOU????
+    (opcode == 7'b0100111) ? 3'b100 :   // I AM CONFUSION: WHO ARE YOU???
 
     (opcode == 7'b0010011) ? 3'b010: 3'bxxx;    // All other I-Type instructions (ADDI, SLTI, etc.)
 

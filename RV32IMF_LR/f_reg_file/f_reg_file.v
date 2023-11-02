@@ -62,6 +62,17 @@ always @(posedge CLK_INC ) begin
 	
 end
 
+/*
+always @(posedge CLK ) begin
 
+
+   REGISTERS[1] <= 32'd1;  
+   REGISTERS[2] <= 32'd2;    
+   REGISTERS[3] <= 32'd3;    
+
+
+end
+
+*/
 
 endmodule
