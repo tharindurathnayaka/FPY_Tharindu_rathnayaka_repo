@@ -93,16 +93,16 @@ module cpu_tb;
         $display("    ");
 
 
-        $display("F_Register 1 ",dut.ID_FREG_FILE.REGISTERS[1]);
-        $display("F_Register 2 ",dut.ID_FREG_FILE.REGISTERS[2]);
-        $display("F_Register 3 ",dut.ID_FREG_FILE.REGISTERS[3]);
-        $display("F_Register 4 ",dut.ID_FREG_FILE.REGISTERS[4]);
-        $display("F_Register 5 ",dut.ID_FREG_FILE.REGISTERS[5]);
-        $display("F_Register 6 ",dut.ID_FREG_FILE.REGISTERS[6]);
-        $display("F_Register 7 ",dut.ID_FREG_FILE.REGISTERS[7]);
-        $display("F_Register 8 ",dut.ID_FREG_FILE.REGISTERS[8]);
-        $display("F_Register 9 ",dut.ID_FREG_FILE.REGISTERS[9]);
-        $display("F_Register 10 ",dut.ID_FREG_FILE.REGISTERS[10]);
+        $display("F_Register 1 %f",dut.ID_FREG_FILE.REGISTERS[1]);
+        $display("F_Register 2 %f",dut.ID_FREG_FILE.REGISTERS[2]);
+        $display("F_Register 3 %f",dut.ID_FREG_FILE.REGISTERS[3]);
+        $display("F_Register 4 %f",dut.ID_FREG_FILE.REGISTERS[4]);
+        $display("F_Register 5 %f",dut.ID_FREG_FILE.REGISTERS[5]);
+        $display("F_Register 6 %f",dut.ID_FREG_FILE.REGISTERS[6]);
+        $display("F_Register 7 %f",dut.ID_FREG_FILE.REGISTERS[7]);
+        $display("F_Register 8 %f",dut.ID_FREG_FILE.REGISTERS[8]);
+        $display("F_Register 9 %f",dut.ID_FREG_FILE.REGISTERS[9]);
+        $display("F_Register 10 %f ",dut.ID_FREG_FILE.REGISTERS[10]);
 
 
         
