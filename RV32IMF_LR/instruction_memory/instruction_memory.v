@@ -32,14 +32,14 @@ module instruction_memory (CLK,RESET, READ_ADDRESS, READ_DATA, BUSYWAIT,PC_OUT,C
          //Floating points instructions
 
 		{memory_array[10'd35], memory_array[10'd34], memory_array[10'd33], memory_array[10'd32]} <= 32'b00000000000000000010000010000111; 
-        {memory_array[10'd39], memory_array[10'd38], memory_array[10'd37], memory_array[10'd36]} <= 32'b00000000100000000010000100000111;     
+        {memory_array[10'd39], memory_array[10'd38], memory_array[10'd37], memory_array[10'd36]} <= 32'b00000000010000000010000100000111;     
         {memory_array[10'd43], memory_array[10'd42], memory_array[10'd41], memory_array[10'd40]} <= 32'b00000000100000000010000110000111; 
 
         
-		{memory_array[10'd47], memory_array[10'd46], memory_array[10'd45], memory_array[10'd44]} <= 32'b00000000001000001000000111010011;
-        {memory_array[10'd51], memory_array[10'd50], memory_array[10'd49], memory_array[10'd48]} <= 32'b00001000000100010000001001010011; 
-       // {memory_array[10'd55], memory_array[10'd54], memory_array[10'd53], memory_array[10'd52]} <= 32'b00010000001000001000001011010011; 
-		//{memory_array[10'd59], memory_array[10'd58], memory_array[10'd57], memory_array[10'd56]} <= 32'b00011000001000001000001101010011;
+		{memory_array[10'd47], memory_array[10'd46], memory_array[10'd45], memory_array[10'd44]} <= 32'b00000000001000001000001001010011;
+        {memory_array[10'd51], memory_array[10'd50], memory_array[10'd49], memory_array[10'd48]} <= 32'b00001000000100010000001011010011; 
+        {memory_array[10'd55], memory_array[10'd54], memory_array[10'd53], memory_array[10'd52]} <= 32'b00010000001000001000001101010011; 
+	    {memory_array[10'd59], memory_array[10'd58], memory_array[10'd57], memory_array[10'd56]} <= 32'b00011000001000001000001111010011;
           /* 
 		  {memory_array[10'd63], memory_array[10'd62], memory_array[10'd61], memory_array[10'd60]} <= 32'b00000000000000000000000000000000; 
 		  {memory_array[10'd67], memory_array[10'd66], memory_array[10'd65], memory_array[10'd64]} <= 32'b00000000000000000000000000000000;

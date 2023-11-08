@@ -93,26 +93,26 @@ module cpu_tb;
         $display("    ");
 
 
-        $display("F_Register 1 %f",dut.ID_FREG_FILE.REGISTERS[1]);
-        $display("F_Register 2 %f",dut.ID_FREG_FILE.REGISTERS[2]);
-        $display("F_Register 3 %f",dut.ID_FREG_FILE.REGISTERS[3]);
-        $display("F_Register 4 %f",dut.ID_FREG_FILE.REGISTERS[4]);
-        $display("F_Register 5 %f",dut.ID_FREG_FILE.REGISTERS[5]);
-        $display("F_Register 6 %f",dut.ID_FREG_FILE.REGISTERS[6]);
-        $display("F_Register 7 %f",dut.ID_FREG_FILE.REGISTERS[7]);
-        $display("F_Register 8 %f",dut.ID_FREG_FILE.REGISTERS[8]);
-        $display("F_Register 9 %f",dut.ID_FREG_FILE.REGISTERS[9]);
-        $display("F_Register 10 %f ",dut.ID_FREG_FILE.REGISTERS[10]);
+        $display("F_Register 1 %b",dut.ID_FREG_FILE.REGISTERS[1]);
+        $display("F_Register 2 %b",dut.ID_FREG_FILE.REGISTERS[2]);
+        $display("F_Register 3 %b",dut.ID_FREG_FILE.REGISTERS[3]);
+        $display("F_Register 4 %b",dut.ID_FREG_FILE.REGISTERS[4]);
+        $display("F_Register 5 %b",dut.ID_FREG_FILE.REGISTERS[5]);
+        $display("F_Register 6 %b",dut.ID_FREG_FILE.REGISTERS[6]);
+        $display("F_Register 7 %b",dut.ID_FREG_FILE.REGISTERS[7]);
+        $display("F_Register 8 %b",dut.ID_FREG_FILE.REGISTERS[8]);
+        $display("F_Register 9 %b",dut.ID_FREG_FILE.REGISTERS[9]);
+        $display("F_Register 10 %b ",dut.ID_FREG_FILE.REGISTERS[10]);
 
 
         
 
-        $display("Mem 0 ",data_memory1.memory_array[0]);
-        $display("Mem 1 ",data_memory1.memory_array[4]);
-        $display("Mem 2 ",data_memory1.memory_array[8]);
-        $display("Mem 3 ",data_memory1.memory_array[12]);
-        $display("Mem 4 ",data_memory1.memory_array[16]);
-        $display("Mem 5 ",data_memory1.memory_array[20]);
+        $display("Mem 0 %b  ",data_memory1.memory_array[0]);
+        $display("Mem 1 %b ",data_memory1.memory_array[4]);
+        $display("Mem 2 %b ",data_memory1.memory_array[8]);
+        $display("Mem 3 %b ",data_memory1.memory_array[12]);
+        $display("Mem 4 %b ",data_memory1.memory_array[16]);
+        $display("Mem 5 %b ",data_memory1.memory_array[20]);
 
 
         $finish;

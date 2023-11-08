@@ -65,7 +65,7 @@ end
 
 always @(posedge clock)
 begin
-   
+  //
     if(write[2])
 	begin
         memory_array[{address[31:2],2'b00}] <=writedata[7:0]  ;
@@ -74,9 +74,15 @@ begin
         memory_array[{address[31:2],2'b11}]<=writedata[31:24]  ;
        // busywait = 0;
 		  //write_done = 0;
+
 		
 		
-    end
+    end 
+
+   // {memory_array[3],memory_array[2],memory_array[1],memory_array[0]} <=32'b01000000111100000000000000000000; //7.5
+   // {memory_array[7],memory_array[6],memory_array[5],memory_array[4]}  <=32'b01000000001011001100110011001101; // 5.1
+   // {memory_array[11],memory_array[10],memory_array[9],memory_array[8]}<=32'b01000000101000110011001100110011; // 5.1
+
 	 
 	 if (reset)
     begin
@@ -88,7 +94,6 @@ begin
 		writeaccess = 0;
     end
 end
-
 
 always @(posedge CLK_INC ) begin
     
