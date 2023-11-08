@@ -1,0 +1,120 @@
+Restore Archived Project report for RV32IMF_FPGA
+Wed Nov  8 12:43:10 2023
+Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Restore Archived Project Summary
+  3. Restore Archived Project Messages
+  4. Files Restored
+  5. Files Not Restored
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2023  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-------------------------------------------------------------------------+
+; Restore Archived Project Summary                                        ;
++---------------------------------+---------------------------------------+
+; Restore Archived Project Status ; Successful - Wed Nov  8 12:43:10 2023 ;
+; Revision Name                   ; RV32IMF_FPGA                          ;
+; Top-level Entity Name           ; RV32IMF_FPGA                          ;
+; Family                          ; Cyclone IV E                          ;
++---------------------------------+---------------------------------------+
+
+
++-----------------------------------+
+; Restore Archived Project Messages ;
++-----------------------------------+
+Info: Successfully restored 'E:/FY_Reserch/FPY_Tharindu_rathnayaka_repo/RV32IMF_FPGA.qar' into the 'E:/FY_Reserch/FPY_Tharindu_rathnayaka_repo/RV32IMF_FPGA/' directory
+Info: Generated report 'RV32IMF_FPGA.restore.rpt'
+Info (23030): Evaluation of Tcl script c:/intelfpga_lite/22.1std/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4837 megabytes
+    Info: Processing ended: Wed Nov  8 12:43:10 2023
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+
++------------------------------------------------------------------+
+; Files Restored                                                   ;
++------------------------------------------------------------------+
+; File Name                                                        ;
++------------------------------------------------------------------+
+; qar_info.json                                                    ;
+; JTAG_UART_MODULE.v                                               ;
+; RV32IMF_FPGA.bdf                                                 ;
+; RV32IMF_FPGA.qpf                                                 ;
+; RV32IMF_FPGA.qsf                                                 ;
+; RV32IMF_LR/Data_memory/data_memory.v                             ;
+; RV32IMF_LR/alu/alu.v                                             ;
+; RV32IMF_LR/branch_control_unit/branch_control_unit.v             ;
+; RV32IMF_LR/control_unit/control_unit.v                           ;
+; RV32IMF_LR/cpu/cpu.v                                             ;
+; RV32IMF_LR/f_reg_file/f_reg_file.v                               ;
+; RV32IMF_LR/forwarding_units/ex_forward_unit.v                    ;
+; RV32IMF_LR/forwarding_units/mem_forward_unit.v                   ;
+; RV32IMF_LR/fpu/Addition-Subtraction.v                            ;
+; RV32IMF_LR/fpu/Comparison.v                                      ;
+; RV32IMF_LR/fpu/Converter.v                                       ;
+; RV32IMF_LR/fpu/Division.v                                        ;
+; RV32IMF_LR/fpu/Iteration.v                                       ;
+; RV32IMF_LR/fpu/Multiplication.v                                  ;
+; RV32IMF_LR/fpu/Priority Encoder.v                                ;
+; RV32IMF_LR/fpu/fpu.v                                             ;
+; RV32IMF_LR/hazard_detection_unit/hazard_detection_unit.v         ;
+; RV32IMF_LR/immediate_generation_unit/immediate_generation_unit.v ;
+; RV32IMF_LR/instruction_memory/instruction_memory.v               ;
+; RV32IMF_LR/pipeline_flush_unit/pipeline_flush_unit.v             ;
+; RV32IMF_LR/pipeline_registers/pr_ex_mem.v                        ;
+; RV32IMF_LR/pipeline_registers/pr_id_ex.v                         ;
+; RV32IMF_LR/pipeline_registers/pr_if_id.v                         ;
+; RV32IMF_LR/pipeline_registers/pr_mem_wb.v                        ;
+; RV32IMF_LR/reg_file/reg_file.v                                   ;
+; RV32IMF_LR/support_modules/mux_2to1_32bit.v                      ;
+; RV32IMF_LR/support_modules/mux_2to1_3bit.v                       ;
+; RV32IMF_LR/support_modules/mux_4to1_32bit.v                      ;
+; RV32IMF_LR/support_modules/plus_4_adder.v                        ;
+; clock_sel.v                                                      ;
+; jtag_uart.v                                                      ;
+; jtag_uart/jtag_uart.cmp                                          ;
+; jtag_uart/synthesis/jtag_uart.qip                                ;
+; jtag_uart/synthesis/jtag_uart.regmap                             ;
+; jtag_uart/synthesis/jtag_uart.v                                  ;
+; jtag_uart/synthesis/submodules/jtag_uart_jtag_uart_0.v           ;
+; lpm_devide1.qip                                                  ;
+; lpm_devide1.v                                                    ;
+; lpm_devide1_bb.v                                                 ;
+; signals.v                                                        ;
+; assignment_defaults.qdf                                          ;
++------------------------------------------------------------------+
+
+
++--------------------+
+; Files Not Restored ;
++--------------------+
+; File Name          ;
++--------------------+
+
+
