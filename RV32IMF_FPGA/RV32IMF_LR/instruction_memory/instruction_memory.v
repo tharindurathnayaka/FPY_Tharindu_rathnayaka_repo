@@ -10,9 +10,9 @@ module instruction_memory (CLK,RESET, READ_ADDRESS, READ_DATA, BUSYWAIT,PC_OUT,C
 
     reg [7:0] memory_array [85:0];    // 1024 x 8-bits memory array
 
-    assign PC_OUT ={READ_ADDRESS[31:0],8'b00011110};
-	 assign INS_OUT =  {14'd0,READ_DATA[31:25],READ_DATA[14:12],READ_DATA[6:0],8'b00011111};
-	 assign CLK_OUT={7'd0,24'd0,CLK,8'b00100000};
+    assign PC_OUT ={READ_ADDRESS[31:0],8'b00010001};
+	assign INS_OUT =  {14'd0,READ_DATA[31:25],READ_DATA[14:12],READ_DATA[6:0],8'b00010010};
+	assign CLK_OUT={7'd0,24'd0,CLK,8'b00010011};
 
     always 
     begin
@@ -66,16 +66,7 @@ module instruction_memory (CLK,RESET, READ_ADDRESS, READ_DATA, BUSYWAIT,PC_OUT,C
         READ_DATA[23:16]    <= memory_array[{READ_ADDRESS[31:2],2'b10}];
         READ_DATA[31:24]    <= memory_array[{READ_ADDRESS[31:2],2'b11}];
     end
-	
-	
 
-	 
-
-	 
-	 
-	 
-	 
-	 
 	 
 
 endmodule

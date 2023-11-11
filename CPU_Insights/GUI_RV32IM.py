@@ -99,58 +99,55 @@ def process(data):
     # Convert the binary representation to a decimal value
     decimal_value = int(binary_str, 2)
 
-    if (binary_str2 == 1):
+    if (binary_str2 == 2):
         R1 = decimal_value
 
-    elif (binary_str2 == 2):
+    elif (binary_str2 == 3):
         R2 = decimal_value
 
-    elif (binary_str2 == 3):
+    elif (binary_str2 == 4):
         R3 = decimal_value
 
-    elif (binary_str2 == 4):
+    elif (binary_str2 == 5):
         R4 = decimal_value
 
-    elif (binary_str2 == 5):
+    elif (binary_str2 == 6):
         R5 = decimal_value
 
-    if (binary_str2 == 11):
-        M1 = decimal_value
-
-    elif (binary_str2 == 12):
-        M2 = decimal_value
-
-    elif (binary_str2 == 13):
-        M3 = decimal_value
-
-    elif (binary_str2 == 14):
-        M4 = decimal_value
-
-    elif (binary_str2 == 15):
-        M5 = decimal_value
-
-    if (binary_str2 == 21):
+    elif (binary_str2 == 7):
         R6 = decimal_value
 
-    elif (binary_str2 == 22):
+    elif (binary_str2 == 8):
         R7 = decimal_value
 
-    elif (binary_str2 == 23):
+    elif (binary_str2 == 9):
         R8 = decimal_value
 
-    elif (binary_str2 == 24):
+    elif (binary_str2 == 10):
         R9 = decimal_value
 
-    elif (binary_str2 == 25):
+    elif (binary_str2 == 11):
         R10 = decimal_value
 
-    elif (binary_str2 == 30):
+    elif (binary_str2 == 12):
+        M1 = decimal_value
+
+    elif (binary_str2 == 13):
+        M2 = decimal_value
+
+    elif (binary_str2 == 14):
+        M3 = decimal_value
+
+    elif (binary_str2 == 15):
+        M4 = decimal_value
+
+    elif (binary_str2 == 16):
+        M5 = decimal_value
+
+    elif (binary_str2 == 17):
         PC = decimal_value
 
-    elif (binary_str2 == 31):
-
-
-
+    elif (binary_str2 == 18):
 
         if (decimal_value == 19):
             INS = "LOADI"
@@ -171,8 +168,6 @@ def process(data):
                 arrow2.config(bg="dodgerblue3")
                 arrow3.config(bg="dodgerblue3")
                 regenabled.config(bg="blue")
-        
-        
 
         if(PC > PC_OLD):
             if (len(INS_P) >= 5):
@@ -184,8 +179,6 @@ def process(data):
 
         CLK_ROLD=CLK_R
         PC_OLD =PC
-
-
 
 
 

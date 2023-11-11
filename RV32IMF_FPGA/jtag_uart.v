@@ -1,4 +1,4 @@
-module jtag_intro(CLK_50,RESET,LEDR,R_IN,M_IN,PC_IN,INC,CLK_IN,INS_IN,CLK_INC);
+ module jtag_intro(CLK_50,RESET,LEDR,R_IN,M_IN,PC_IN,INC,CLK_IN,INS_IN,CLK_INC);
 
 input RESET,CLK_50;
 input [39:0]R_IN,M_IN,PC_IN,INS_IN,CLK_IN;
@@ -37,20 +37,15 @@ JTAG_UART_MODULE JTAG_UART_MODULE1(CLK_50 , 1'b0,~(clk1_out )  , readdata, jtag_
 //-----------------------------------------
 
 initial begin
-     INC1=5'd0;
+    INC1=5'd0;
 	  INC2=5'd0;
 	 
-	 R= 40'b0000000000000000000000000000000011111111;
-
+	 R=         40'b0000000000000000000000000000000011111111;
+   jatg_data =40'd45;
 	  
 	end
 	
 	
-
-
-
-
-//assign jatg_data = 40'b0000000000000000000000000000000011111111;
 
 always @(posedge (clk1_out ) ) begin
     
@@ -85,32 +80,34 @@ always @(posedge clk2_out) begin
     INC2 = INC2 + 5'd1;
 
     case (INC2)
-        1:  jatg_data <= R;
-		  2:  jatg_data <= R_IN;
-        3:  jatg_data <= R_IN;
-        4:  jatg_data <= R_IN;
-		  5:  jatg_data <= R_IN;
-		  6:  jatg_data <= R_IN;
-		  7:  jatg_data <= M_IN;
-		  8:  jatg_data <= M_IN;
-		  9:  jatg_data <= M_IN;
-		  10: jatg_data <= M_IN;
-		  11: jatg_data <= M_IN;
-		  12: jatg_data <= R_IN;
-		  13: jatg_data <= R_IN;
-		  14: jatg_data <= R_IN;
-		  15: jatg_data <= R_IN;
-		  16: jatg_data <= R_IN;
-		  17: jatg_data <= PC_IN;
-		  18: jatg_data <= INS_IN;
+      1:  jatg_data = R;
+		  2:  jatg_data = R_IN;
+      3:  jatg_data = R_IN;
+      4:  jatg_data = R_IN;
+		  5:  jatg_data = R_IN;
+		  6:  jatg_data = R_IN;
+		  7:  jatg_data = R_IN;
+		  8:  jatg_data = R_IN;
+		  9:  jatg_data = R_IN;
+		  10: jatg_data = R_IN;
+		  11: jatg_data = R_IN;
+		  12: jatg_data = M_IN;
+		  13: jatg_data = M_IN;
+		  14: jatg_data = M_IN;
+		  15: jatg_data = M_IN;
+		  16: jatg_data = M_IN;
+		  17: jatg_data = PC_IN;
+		  18: jatg_data = INS_IN;
 		 
-        19: begin
-            jatg_data <=CLK_IN ;
-            INC2 <= 0;
+      19: begin
+            jatg_data =CLK_IN ;
+            INC2 = 0;
         end
-        default: jatg_data = R; 
+        default: jatg_data = R_IN; 
     endcase
 	
+
+
 	
 end
 
@@ -127,7 +124,7 @@ module Clock_divider1(clock_in,clock_out
 input clock_in; // input clock on FPGA
 output reg clock_out; // output clock after dividing the input clock by divisor
 reg[27:0] counter=28'd0;
-parameter DIVISOR = 28'd500000;
+parameter DIVISOR = 28'd9000000;
 
 always @(posedge clock_in)
 begin

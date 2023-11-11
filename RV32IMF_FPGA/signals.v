@@ -8,7 +8,7 @@ wire [7:0]PC_1,PC_3;
 wire [3:0]PC_2,PC_4;
 
 wire [7:0]INC_1;
-wire [3:0]INC2_2;
+wire [3:0]INC_2;
 
 
 //pc------------------------ 
@@ -23,8 +23,8 @@ bcd bcd4(8'b0000,HEX3);
 //INC--------------------------------
 
 lpm_devide1 lpm_devide13(4'd10,{3'b000,INC},INC_1,INC_2);
-bcd bcd5(INC_1[3:0],HEX4);
-bcd bcd6(INC_2,HEX5);
+bcd bcd5(INC_1[3:0],HEX5);
+bcd bcd6(INC_2,HEX4);
 
 
 

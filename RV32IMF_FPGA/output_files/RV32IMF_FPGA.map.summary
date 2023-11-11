@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Wed Nov  8 12:54:47 2023
+Analysis & Synthesis Status : Successful - Thu Nov  9 12:19:26 2023
 Quartus Prime Version : 22.1std.1 Build 917 02/14/2023 SC Lite Edition
 Revision Name : RV32IMF_FPGA
 Top-level Entity Name : RV32IMF_FPGA
 Family : Cyclone IV E
-Total logic elements : 9,701
-    Total combinational functions : 8,420
-    Dedicated logic registers : 2,370
-Total registers : 2370
+Total logic elements : 9,718
+    Total combinational functions : 8,432
+    Dedicated logic registers : 2,367
+Total registers : 2367
 Total pins : 56
 Total virtual pins : 0
 Total memory bits : 64
