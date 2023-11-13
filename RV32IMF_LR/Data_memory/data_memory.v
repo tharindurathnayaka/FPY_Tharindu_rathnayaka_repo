@@ -98,14 +98,14 @@ end
 always @(posedge CLK_INC ) begin
     
     case (INC)
-        7 :  M_OUT <= {memory_array[3],memory_array[2],memory_array[1],memory_array[0],8'b00001011};
-		  8 :  M_OUT <= {memory_array[7],memory_array[6],memory_array[5],memory_array[4],8'b00001100};
-		  9 :  M_OUT <= {memory_array[11],memory_array[10],memory_array[9],memory_array[8],8'b00001101};
-		  10:  M_OUT <= {memory_array[15],memory_array[14],memory_array[13],memory_array[12],8'b00001110};
-		  11:  M_OUT <= {memory_array[19],memory_array[18],memory_array[17],memory_array[16],8'b00001111};
+          12 :  M_OUT = {memory_array[3],memory_array[2],memory_array[1],memory_array[0],8'b00001100};
+		  13 :  M_OUT = {memory_array[7],memory_array[6],memory_array[5],memory_array[4],8'b00001101};
+		  14 :  M_OUT = {memory_array[11],memory_array[10],memory_array[9],memory_array[8],8'b00001110};
+		  15 :  M_OUT = {memory_array[15],memory_array[14],memory_array[13],memory_array[12],8'b00001111};
+		  16 :  M_OUT = {memory_array[19],memory_array[18],memory_array[17],memory_array[16],8'b00010000};
 		  
     
-        default: M_OUT <= 40'd0;
+        default: M_OUT = {36'd0,INC};
 		    
     endcase
 	 

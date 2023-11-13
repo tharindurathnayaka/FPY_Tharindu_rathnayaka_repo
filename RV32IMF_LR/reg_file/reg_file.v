@@ -57,19 +57,20 @@ module reg_file (DATA_IN, DATA_OUT1, DATA_OUT2, IN_ADDRESS, OUT1_ADDRESS, OUT2_A
 always @(posedge CLK_INC ) begin
     
     case (INC)
-          2:  R_OUT <= {REGISTERS[1][31:0],8'b00000001};
-		  3:  R_OUT <= {REGISTERS[2][31:0],8'b00000010};
-		  4:  R_OUT <= {REGISTERS[3][31:0],8'b00000011};
-		  5:  R_OUT <= {REGISTERS[4][31:0],8'b00000100};
-		  6:  R_OUT <= {REGISTERS[5][31:0],8'b00000101};
-		  12: R_OUT <= {REGISTERS[6][31:0],8'b00010101};
-		  13: R_OUT <= {REGISTERS[7][31:0],8'b00010110};
-		  14: R_OUT <= {REGISTERS[8][31:0],8'b00010111};
-		  15: R_OUT <= {REGISTERS[9][31:0],8'b00011000};
-		  16: R_OUT <= {REGISTERS[10][31:0],8'b0011001};
+          1:  R_OUT = {REGISTERS[1][31:0],8'b00000011};
+          2:  R_OUT = {REGISTERS[1][31:0],8'b00000010};
+		  3:  R_OUT = {REGISTERS[2][31:0],8'b00000011};
+		  4:  R_OUT = {REGISTERS[3][31:0],8'b00000100};
+		  5:  R_OUT = {REGISTERS[4][31:0],8'b00000101};
+		  6:  R_OUT = {REGISTERS[5][31:0],8'b00000110};
+		  7:  R_OUT = {REGISTERS[6][31:0],8'b00000111};
+		  8:  R_OUT = {REGISTERS[7][31:0],8'b00001000};
+		  9:  R_OUT = {REGISTERS[8][31:0],8'b00001001};
+		  10: R_OUT = {REGISTERS[9][31:0],8'b00001010};
+		  11: R_OUT = {REGISTERS[10][31:0],8'b0001011};
 	
     
-        default: R_OUT <= {REGISTERS[1][31:0],8'b00000001};
+        default: R_OUT <= {REGISTERS[1][31:0],3'b000,INC};
     endcase
 	 
 	 
